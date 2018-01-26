@@ -37,7 +37,7 @@ body {
     font-color: #fdfdfd; }
   .pinstripe-wrap .pinstripe-head {
     padding-bottom: 4%;
-    border-bottom: 1px solid RGB(139, 139, 139);
+    border-bottom: 1px solid rgba(95, 91, 91, 0.5);
     margin-bottom: 10%; }
     .pinstripe-wrap .pinstripe-head h1 {
       color: white;
@@ -57,6 +57,8 @@ body {
     flex-direction: row;
     color: white;
     flex-wrap: wrap; }
+    .pinstripe-wrap .pinstripe-content .save-mobile {
+      display: none; }
     .pinstripe-wrap .pinstripe-content .product-image {
       width: 36%;
       display: flex;
@@ -128,7 +130,8 @@ body {
           display: flex;
           align-items: center; }
           .pinstripe-wrap .pinstripe-content .product-description .customize .customize-size p {
-            margin-right: 20%; }
+            margin-right: 20%;
+            padding-right: 2rem; }
           .pinstripe-wrap .pinstripe-content .product-description .customize .customize-size select {
             background: transparent;
             color: RGB(139, 139, 139); }
@@ -225,44 +228,128 @@ body {
     width: 92%;
     padding-top: 15%; }
     .pinstripe-wrap .pinstripe-head {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 8%; }
       .pinstripe-wrap .pinstripe-head h1 {
         font-size: 1.8rem;
         letter-spacing: .4rem; }
       .pinstripe-wrap .pinstripe-head .bread-crumbs {
         margin: 0 auto;
-        width: 30%; }
+        width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        letter-spacing: .05rem; }
     .pinstripe-wrap .pinstripe-content {
       display: flex;
       flex-direction: column; }
+      .pinstripe-wrap .pinstripe-content .save-mobile {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: grey;
+        font-weight: 200;
+        padding-bottom: 3rem;
+        letter-spacing: .12rem; }
+        .pinstripe-wrap .pinstripe-content .save-mobile p {
+          margin-left: .6rem;
+          font-size: .9rem; }
+      .pinstripe-wrap .pinstripe-content button {
+        margin: 0 auto;
+        font-size: 1rem; }
       .pinstripe-wrap .pinstripe-content .product-image {
         width: 100%;
-        margin-bottom: 5%; }
+        margin-bottom: 15%; }
+        .pinstripe-wrap .pinstripe-content .product-image img {
+          height: 24rem;
+          margin-right: 0; }
       .pinstripe-wrap .pinstripe-content .product-description {
-        width: 100%; }
+        width: 90%;
+        margin: 0 auto; }
+        .pinstripe-wrap .pinstripe-content .product-description .product-description-head {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column; }
+          .pinstripe-wrap .pinstripe-content .product-description .product-description-head img {
+            height: 10rem;
+            max-width: 18rem;
+            padding-bottom: 2.5rem;
+            margin-right: 0; }
+          .pinstripe-wrap .pinstripe-content .product-description .product-description-head .text-wrap {
+            margin-bottom: 1.5rem; }
+            .pinstripe-wrap .pinstripe-content .product-description .product-description-head .text-wrap h1 {
+              font-size: 1.4rem; }
+        .pinstripe-wrap .pinstripe-content .product-description .customize {
+          flex-direction: column; }
+        .pinstripe-wrap .pinstripe-content .product-description p {
+          font-size: 1.2rem;
+          font-weight: 300;
+          letter-spacing: 0.04rem;
+          padding-bottom: .1rem; }
         .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
-          max-width: 170px; } }
+          max-width: 180px; } }
 
 @media screen and (max-width: 540px) {
   .pinstripe-wrap {
     width: 92%;
     padding-top: 15%; }
     .pinstripe-wrap .pinstripe-head {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 8%; }
       .pinstripe-wrap .pinstripe-head h1 {
         font-size: 1.8rem;
         letter-spacing: .4rem; }
       .pinstripe-wrap .pinstripe-head .bread-crumbs {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         margin: 0 auto;
-        width: 41%; }
+        width: 45%;
+        letter-spacing: .05rem; }
     .pinstripe-wrap .pinstripe-content {
       display: flex;
       flex-direction: column; }
+      .pinstripe-wrap .pinstripe-content .save-mobile {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: grey;
+        font-weight: 200;
+        padding-bottom: 3rem;
+        letter-spacing: .12rem; }
+        .pinstripe-wrap .pinstripe-content .save-mobile p {
+          margin-left: .6rem; }
+      .pinstripe-wrap .pinstripe-content button {
+        margin: 0 auto;
+        font-size: .9rem; }
       .pinstripe-wrap .pinstripe-content .product-image {
         width: 100%;
-        margin-bottom: 5%; }
+        margin-bottom: 15%; }
+        .pinstripe-wrap .pinstripe-content .product-image img {
+          height: 24rem;
+          margin-right: 0; }
       .pinstripe-wrap .pinstripe-content .product-description {
-        width: 100%; }
+        width: 90%;
+        margin: 0 auto; }
+        .pinstripe-wrap .pinstripe-content .product-description .product-description-head {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column; }
+          .pinstripe-wrap .pinstripe-content .product-description .product-description-head img {
+            align-self: center;
+            height: 8rem;
+            max-width: 17rem;
+            padding-bottom: 2.5rem;
+            margin-right: 0; }
+          .pinstripe-wrap .pinstripe-content .product-description .product-description-head .text-wrap {
+            margin-bottom: 1.5rem; }
+            .pinstripe-wrap .pinstripe-content .product-description .product-description-head .text-wrap h1 {
+              font-size: 1.4rem; }
+        .pinstripe-wrap .pinstripe-content .product-description .customize {
+          flex-direction: column; }
+        .pinstripe-wrap .pinstripe-content .product-description p {
+          font-size: 1.2rem;
+          font-weight: 300;
+          letter-spacing: 0.04rem;
+          padding-bottom: .7rem; }
         .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
           max-width: 170px; } }
 
